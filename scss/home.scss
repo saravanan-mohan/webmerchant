@@ -1,0 +1,92 @@
+@import './partials/common';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDCDCD;
+
+    h1 {
+        padding: 25px 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            
+            li {
+                margin: 0 30px;
+                border-bottom: 3px solid transparent;
+                text-transform: uppercase;
+                font-size: 13px;
+
+                &:hover {
+                    border-bottom: 3px solid #000000;
+                }
+            }
+        }
+    }
+}
+
+#product {
+    background-color: #FFFFFF;
+    display: flex;
+
+    .product-left, .product-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-right{
+        padding: 50px 0;
+
+        .product-heading{
+            width: 100%;
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        p {
+            width: 60%;
+            margin: 10px 0;
+        }
+
+        .product-feature {
+            margin: 10px 0;
+        }
+
+        .product-big-button {
+            margin: 10px 0;
+        }
+    }
+}
+
+#experience {
+    .section-separator {
+        height: 25px;
+        background-color: #EBEBEB;
+    }
+
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#portfolio {
+    .section-wrapper {
+        .section-header {
+            padding: 20px 0;
+        }
+    }
+
+    .portfolio-big-button {
+        padding: 30px 0;
+        margin: auto;
+    }
+}

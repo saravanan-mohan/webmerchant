@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button.big-button {
+  padding: 10px 30px;
+  border-color: black;
+  border-width: 1px;
+}
+
+.section-head {
+  background-color: #EBEBEB;
+  text-align: center;
+  margin: 10px 0;
+  padding: 30px 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.section-wrapper .section-header {
+  text-align: center;
+  padding: 20px 0 0;
+  margin: 10px 0;
+}
+.section-wrapper .section-desc {
+  margin: 10px 0;
+}
+.section-wrapper .section-desc p {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CDCDCD;
+}
+header h1 {
+  padding: 25px 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  margin: 0 30px;
+  border-bottom: 3px solid transparent;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+header nav ul li:hover {
+  border-bottom: 3px solid #000000;
+}
+
+#product {
+  background-color: #FFFFFF;
+  display: flex;
+}
+#product .product-left, #product .product-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#product .product-right {
+  padding: 50px 0;
+}
+#product .product-right .product-heading {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+#product .product-right p {
+  width: 60%;
+  margin: 10px 0;
+}
+#product .product-right .product-feature {
+  margin: 10px 0;
+}
+#product .product-right .product-big-button {
+  margin: 10px 0;
+}
+
+#experience {
+  border-bottom: 1px solid #EBEBEB;
+}
+#experience .section-separator {
+  height: 25px;
+  background-color: #EBEBEB;
+}
+
+#portfolio .section-wrapper .section-header {
+  padding: 20px 0;
+}
+#portfolio .portfolio-big-button {
+  padding: 30px 0;
+  margin: auto;
+}
+
+/*# sourceMappingURL=home.css.map */
