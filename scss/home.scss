@@ -90,3 +90,23 @@ header {
         margin: auto;
     }
 }
+
+footer {
+    padding: 10px 0;
+    background-color: #565D67;
+    color: #FFFFFF;
+
+    .footer-head {
+        text-align: center;
+        padding: 30px;
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+
+    .footer-wrapper {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+    }
+}
