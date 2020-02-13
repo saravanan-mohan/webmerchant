@@ -38,11 +38,25 @@ header {
 #product {
     background-color: #FFFFFF;
     display: flex;
+    padding: 20px 0;
 
     .product-left, .product-right {
         width: 50%;
         display: flex;
         flex-direction: column;
+    }
+
+    .product-left {
+        justify-content: center;
+        align-items: flex-end;
+
+        .product-image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .product-right{
@@ -70,12 +84,12 @@ header {
 }
 
 #experience {
+    border-bottom: 1px solid #EBEBEB;
+
     .section-separator {
         height: 25px;
         background-color: #EBEBEB;
     }
-
-    border-bottom: 1px solid #EBEBEB;
 }
 
 #portfolio {
@@ -83,11 +97,156 @@ header {
         .section-header {
             padding: 20px 0;
         }
+
+        .portofolio-grid-container {
+            .portofolio-grid {
+                display: flex;
+                flex-wrap: wrap;
+                
+                .portofolio-grid-tile {
+                    width: calc((100vw / 3) - 10px);
+                    margin: 1px;
+                    position: relative;
+
+                    .portofolio-grid-image {
+                        width: 100%;
+                        height: calc((100vw / 3) - 20px);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-color: white;
+                    }
+
+                    .portfolio-grid-hover {
+                        position: absolute;
+                        bottom: 0;
+                        z-index: -1;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: #FFFFFF;
+                        background-color: #565D67;
+                        padding: 15px;
+                        box-sizing: border-box;
+
+                        .hover-heading {
+                            margin-bottom: 5px;
+                        }
+
+                        .hover-text {
+                            font-size: 12px;
+                        }
+                    }
+
+                    &:hover, &:active, &:focus {
+                        .portofolio-grid-image {
+                            height: calc((100vw / 3) - 84px);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .portfolio-big-button {
         padding: 30px 0;
         margin: auto;
+    }
+}
+
+#pricingTable {
+    .pricing-tile-container {
+        padding: 20px;
+
+        .pricing-tile-list {
+            display: flex;
+            justify-content: center;
+            
+            .price-tile-wrapper {
+                padding: 20px;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #000000;
+                text-align: center;
+    
+                .price-heading {
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+    
+                .price-validity {
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                }
+    
+                .plan-button {
+                    margin: 20px 0;
+    
+                    button {
+                        padding: 5px 15px;
+                    }
+                }
+    
+                .price-feature {
+                    .price-feature-text {
+                        margin-bottom: 5px;
+                        font-size: 12px;
+    
+                        span:first-of-type {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    margin-bottom: 30px;
+    
+    .section-wrapper {
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 50px 10px;
+
+            .contact-left {
+                width: 50%;
+                text-align: right;
+                text-align: -webkit-right;
+                padding: 0 20px;
+
+                input, textarea {
+                    display: block;
+                    margin-bottom: 25px;
+                    padding: 10px 20px;
+                    width: 60%;
+                }
+
+                textarea {
+                    height: 35%;
+                }
+            }
+
+            .contact-right {
+                width: 50%;
+                padding: 0 20px;
+                box-sizing: border-box;
+
+                p, .address, .phone-no {
+                    width: 75%;
+                    margin-bottom: 20px;
+                }
+
+                .phone-no {
+                    li {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
     }
 }
 

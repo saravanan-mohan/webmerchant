@@ -82,11 +82,22 @@ header nav ul li:hover {
 #product {
   background-color: #FFFFFF;
   display: flex;
+  padding: 20px 0;
 }
 #product .product-left, #product .product-right {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+#product .product-left {
+  justify-content: center;
+  align-items: flex-end;
+}
+#product .product-left .product-image {
+  width: 50%;
+}
+#product .product-left .product-image img {
+  width: 100%;
 }
 #product .product-right {
   padding: 50px 0;
@@ -118,9 +129,120 @@ header nav ul li:hover {
 #portfolio .section-wrapper .section-header {
   padding: 20px 0;
 }
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile {
+  width: calc((100vw / 3) - 10px);
+  margin: 1px;
+  position: relative;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portofolio-grid-image {
+  width: 100%;
+  height: calc((100vw / 3) - 20px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #565D67;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-heading {
+  margin-bottom: 5px;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-text {
+  font-size: 12px;
+}
+#portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:hover .portofolio-grid-image, #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:active .portofolio-grid-image, #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:focus .portofolio-grid-image {
+  height: calc((100vw / 3) - 84px);
+}
 #portfolio .portfolio-big-button {
   padding: 30px 0;
   margin: auto;
+}
+
+#pricingTable .pricing-tile-container {
+  padding: 20px;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list {
+  display: flex;
+  justify-content: center;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper {
+  padding: 20px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+  text-align: center;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-heading {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-validity {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .plan-button {
+  margin: 20px 0;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .plan-button button {
+  padding: 5px 15px;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-feature .price-feature-text {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-feature .price-feature-text span:first-of-type {
+  font-weight: bold;
+}
+
+#contact {
+  margin-bottom: 30px;
+}
+#contact .section-wrapper .contact-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+#contact .section-wrapper .contact-wrapper .contact-left {
+  width: 50%;
+  text-align: right;
+  text-align: -webkit-right;
+  padding: 0 20px;
+}
+#contact .section-wrapper .contact-wrapper .contact-left input, #contact .section-wrapper .contact-wrapper .contact-left textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  width: 60%;
+}
+#contact .section-wrapper .contact-wrapper .contact-left textarea {
+  height: 35%;
+}
+#contact .section-wrapper .contact-wrapper .contact-right {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#contact .section-wrapper .contact-wrapper .contact-right p, #contact .section-wrapper .contact-wrapper .contact-right .address, #contact .section-wrapper .contact-wrapper .contact-right .phone-no {
+  width: 75%;
+  margin-bottom: 20px;
+}
+#contact .section-wrapper .contact-wrapper .contact-right .phone-no li {
+  margin-bottom: 5px;
 }
 
 footer {
