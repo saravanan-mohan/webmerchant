@@ -76,6 +76,19 @@ header {
   justify-content: space-between;
   background-color: #CDCDCD;
 }
+header .expand-button {
+  display: none;
+  font-size: 35px;
+  padding: 15px 20px;
+  min-width: 25px;
+  text-align: center;
+}
+header .expand-button:before {
+  content: "+";
+}
+header .expand-button.expanded:before {
+  content: "-";
+}
 header h1 {
   padding: 25px 40px;
   font-size: 20px;
@@ -100,6 +113,20 @@ header nav ul li {
 }
 header nav ul li:hover {
   border-bottom: 3px solid #000000;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+  header .expand-button {
+    display: inline-block;
+    width: 15%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  header nav {
+    display: none;
+  }
 }
 
 #product {
@@ -151,6 +178,31 @@ header nav ul li:hover {
 #product .product-right .product-big-button {
   margin: 10px 0;
 }
+@media only screen and (max-width: 768px) {
+  #product {
+    flex-direction: column-reverse;
+  }
+  #product .product-left, #product .product-right {
+    width: 100%;
+    text-align: center;
+  }
+  #product .product-left .product-image {
+    width: 100%;
+  }
+  #product .product-right {
+    padding: 20px 0;
+  }
+  #product .product-right .product-heading {
+    text-align: center;
+  }
+  #product .product-right p {
+    width: 70%;
+    margin: 20px auto;
+  }
+  #product .product-right .product-feature {
+    margin: 10px auto;
+  }
+}
 
 #team .section-wrapper .team-container {
   margin: 30px 0 0;
@@ -194,6 +246,16 @@ header nav ul li:hover {
   font-size: 10px;
   border: 1px solid #565D67;
   padding: 8px 0;
+}
+@media only screen and (max-width: 768px) {
+  #team .section-wrapper .team-container .team-list {
+    flex-direction: column;
+  }
+  #team .section-wrapper .team-container .team-list .team-tile {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 
 #experience {
@@ -239,6 +301,7 @@ header nav ul li:hover {
 }
 #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-heading {
   margin-bottom: 5px;
+  text-align: center;
 }
 #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-text {
   font-size: 12px;
@@ -249,6 +312,25 @@ header nav ul li:hover {
 #portfolio .portfolio-big-button {
   padding: 30px 0;
   margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile {
+    width: calc((100vw / 3) - 2px);
+  }
+  #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover {
+    padding: 0;
+  }
+  #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-heading {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover .hover-text {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:hover .portofolio-grid-image, #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:active .portofolio-grid-image, #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile:focus .portofolio-grid-image {
+    height: calc((100vw / 3) - 50px);
+  }
 }
 
 #pricingTable .pricing-tile-container {
@@ -286,6 +368,18 @@ header nav ul li:hover {
 }
 #pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-feature .price-feature-text span:first-of-type {
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  #pricingTable .pricing-tile-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #pricingTable .pricing-tile-container .pricing-tile-list {
+    flex-direction: column;
+  }
+  #pricingTable .pricing-tile-container .pricing-tile-list li {
+    margin-bottom: 20px;
+  }
 }
 
 #contact {
@@ -327,6 +421,24 @@ header nav ul li:hover {
   border: 1px solid #565D67;
   color: #565D67;
 }
+@media only screen and (max-width: 768px) {
+  #contact .section-wrapper .contact-wrapper {
+    flex-direction: column;
+  }
+  #contact .section-wrapper .contact-wrapper .contact-left, #contact .section-wrapper .contact-wrapper .contact-right {
+    width: 100%;
+    text-align: center;
+  }
+  #contact .section-wrapper .contact-wrapper .contact-left {
+    text-align: -webkit-center;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  #contact .section-wrapper .contact-wrapper .contact-right p, #contact .section-wrapper .contact-wrapper .contact-right .address, #contact .section-wrapper .contact-wrapper .contact-right .phone-no {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 
 footer {
   padding: 10px 0;
@@ -358,6 +470,11 @@ footer .footer-wrapper .social-contact .fa {
 }
 footer .footer-wrapper .social-contact .fa:before {
   color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-wrapper {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
