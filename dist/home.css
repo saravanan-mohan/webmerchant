@@ -304,6 +304,9 @@ header nav ul li:hover {
   text-transform: capitalize;
   font-weight: bold;
 }
+#experience .flat-progress ul li .progress-title-container .progress-title-value {
+  color: #CDCDCD;
+}
 #experience .flat-progress ul li .progress-outer {
   background-color: #EBEBEB;
 }
@@ -412,6 +415,14 @@ header nav ul li:hover {
 }
 #pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .plan-button button {
   padding: 5px 15px;
+  background-color: #C65640;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .plan-button button:disabled {
+  background-color: #cdcdcd;
+  cursor: auto;
 }
 #pricingTable .pricing-tile-container .pricing-tile-list .price-tile-wrapper .price-feature .price-feature-text {
   margin-bottom: 5px;
@@ -447,14 +458,22 @@ header nav ul li:hover {
   text-align: -webkit-right;
   padding: 0 20px;
 }
-#contact .section-wrapper .contact-wrapper .contact-left input, #contact .section-wrapper .contact-wrapper .contact-left textarea {
+#contact .section-wrapper .contact-wrapper .contact-left .left-wrapper {
+  width: 65%;
+}
+#contact .section-wrapper .contact-wrapper .contact-left .left-wrapper input, #contact .section-wrapper .contact-wrapper .contact-left .left-wrapper textarea {
   display: block;
   margin-bottom: 25px;
   padding: 10px 20px;
-  width: 60%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #565D67;
 }
-#contact .section-wrapper .contact-wrapper .contact-left textarea {
-  height: 35%;
+#contact .section-wrapper .contact-wrapper .contact-left .left-wrapper textarea {
+  height: 100px;
+}
+#contact .section-wrapper .contact-wrapper .contact-left .left-wrapper button {
+  float: left;
 }
 #contact .section-wrapper .contact-wrapper .contact-right {
   width: 50%;
@@ -487,6 +506,9 @@ header nav ul li:hover {
     text-align: -webkit-center;
     margin-bottom: 30px;
     padding: 0;
+  }
+  #contact .section-wrapper .contact-wrapper .contact-left .left-wrapper button {
+    float: none;
   }
   #contact .section-wrapper .contact-wrapper .contact-right p, #contact .section-wrapper .contact-wrapper .contact-right .address, #contact .section-wrapper .contact-wrapper .contact-right .phone-no {
     margin: 0 auto;

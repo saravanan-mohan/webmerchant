@@ -289,6 +289,10 @@ header {
                         text-transform: capitalize;
                         font-weight: bold;
                     }
+
+                    .progress-title-value {
+                        color: #CDCDCD;
+                    }
                 }
 
                 .progress-outer {
@@ -441,6 +445,15 @@ header {
     
                     button {
                         padding: 5px 15px;
+                        background-color: #C65640;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+
+                        &:disabled {
+                            background-color: #cdcdcd;
+                            cursor: auto;
+                        }
                     }
                 }
     
@@ -489,15 +502,25 @@ header {
                 text-align: -webkit-right;
                 padding: 0 20px;
 
-                input, textarea {
-                    display: block;
-                    margin-bottom: 25px;
-                    padding: 10px 20px;
-                    width: 60%;
-                }
+                .left-wrapper {
+                    width: 65%;
 
-                textarea {
-                    height: 35%;
+                    input, textarea {
+                        display: block;
+                        margin-bottom: 25px;
+                        padding: 10px 20px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border: 1px solid #565D67;
+                    }
+    
+                    textarea {
+                        height: 100px;
+                    }
+
+                    button {
+                        float: left;
+                    }
                 }
             }
 
@@ -545,6 +568,12 @@ header {
                     text-align: -webkit-center;
                     margin-bottom: 30px;
                     padding: 0;
+
+                    .left-wrapper {
+                        button {
+                            float: none;
+                        }
+                    }
                 }
 
                 .contact-right {    
