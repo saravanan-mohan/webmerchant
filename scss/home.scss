@@ -267,6 +267,51 @@ header {
         height: 25px;
         background-color: #EBEBEB;
     }
+
+    .flat-progress {
+        margin: 50px 0;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                width: 40%;
+                margin: 20px;
+
+                .progress-title-container {
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .progress-title {
+                        text-transform: capitalize;
+                        font-weight: bold;
+                    }
+                }
+
+                .progress-outer {
+                    background-color: #EBEBEB;
+
+                    .progress-value {
+                        height: 25px;
+                        background-color: #3db0f7;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .flat-progress {
+            ul {
+                li {
+                    margin: 15px;
+                }
+            }
+        }
+    }
 }
 
 #portfolio {

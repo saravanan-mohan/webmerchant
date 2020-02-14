@@ -283,6 +283,39 @@ header nav ul li:hover {
   height: 25px;
   background-color: #EBEBEB;
 }
+#experience .flat-progress {
+  margin: 50px 0;
+}
+#experience .flat-progress ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#experience .flat-progress ul li {
+  width: 40%;
+  margin: 20px;
+}
+#experience .flat-progress ul li .progress-title-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#experience .flat-progress ul li .progress-title-container .progress-title {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+#experience .flat-progress ul li .progress-outer {
+  background-color: #EBEBEB;
+}
+#experience .flat-progress ul li .progress-outer .progress-value {
+  height: 25px;
+  background-color: #3db0f7;
+}
+@media only screen and (max-width: 768px) {
+  #experience .flat-progress ul li {
+    margin: 15px;
+  }
+}
 
 #portfolio .section-wrapper .section-header {
   padding: 20px 0;
