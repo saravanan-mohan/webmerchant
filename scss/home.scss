@@ -263,9 +263,62 @@ header {
 #experience {
     border-bottom: 1px solid #EBEBEB;
 
+    .section-wrapper {
+        margin-bottom: 30px;
+    }
+
     .section-separator {
         height: 25px;
         background-color: #EBEBEB;
+    }
+
+    .round-progress {
+        margin: 50px 0;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                width: 15%;
+                height: 100px;
+
+                .progress-container {
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .ounter-ring, .ring-mask, .progress-indicator {
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        background-color: #3db0f7;
+                        border-radius: 50%;
+                    }
+
+                    .ring-mask {
+                        background-color: #FFFFFF;
+                        width: 80px;
+                        height: 80px;
+                        top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .progress-indicator {
+                        background-color: #EBEBEB;
+                    }
+                }
+
+                .progress-title {
+                    margin-top: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .flat-progress {
@@ -308,6 +361,18 @@ header {
     }
 
     @media only screen and (max-width: 768px) {
+        .round-progress {
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    width: 30%;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+
         .flat-progress {
             ul {
                 li {

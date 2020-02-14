@@ -279,9 +279,53 @@ header nav ul li:hover {
 #experience {
   border-bottom: 1px solid #EBEBEB;
 }
+#experience .section-wrapper {
+  margin-bottom: 30px;
+}
 #experience .section-separator {
   height: 25px;
   background-color: #EBEBEB;
+}
+#experience .round-progress {
+  margin: 50px 0;
+}
+#experience .round-progress ul {
+  display: flex;
+  justify-content: center;
+}
+#experience .round-progress ul li {
+  width: 15%;
+  height: 100px;
+}
+#experience .round-progress ul li .progress-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#experience .round-progress ul li .progress-container .ounter-ring, #experience .round-progress ul li .progress-container .ring-mask, #experience .round-progress ul li .progress-container .progress-indicator {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #3db0f7;
+  border-radius: 50%;
+}
+#experience .round-progress ul li .progress-container .ring-mask {
+  background-color: #FFFFFF;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience .round-progress ul li .progress-container .progress-indicator {
+  background-color: #EBEBEB;
+}
+#experience .round-progress ul li .progress-title {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 #experience .flat-progress {
   margin: 50px 0;
@@ -315,6 +359,14 @@ header nav ul li:hover {
   background-color: #3db0f7;
 }
 @media only screen and (max-width: 768px) {
+  #experience .round-progress ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #experience .round-progress ul li {
+    width: 30%;
+    margin-bottom: 60px;
+  }
   #experience .flat-progress ul li {
     margin: 15px;
   }
