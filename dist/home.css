@@ -465,6 +465,9 @@ header nav ul li:hover {
   width: 75%;
   margin-bottom: 20px;
 }
+#contact .section-wrapper .contact-wrapper .contact-right .address, #contact .section-wrapper .contact-wrapper .contact-right .phone-no {
+  font-weight: bold;
+}
 #contact .section-wrapper .contact-wrapper .contact-right .phone-no li {
   margin-bottom: 5px;
 }
