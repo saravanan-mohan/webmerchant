@@ -19,8 +19,15 @@ a {
 
 button.big-button {
   padding: 10px 30px;
+  text-transform: uppercase;
   border-color: black;
   border-width: 1px;
+  background-color: transparent;
+  transition: color 0.5s, background-color 0.5s;
+}
+button.big-button:hover, button.big-button:active {
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .section-head {
@@ -89,6 +96,7 @@ header nav ul li {
   border-bottom: 3px solid transparent;
   text-transform: uppercase;
   font-size: 13px;
+  transition: border-bottom 0.5s;
 }
 header nav ul li:hover {
   border-bottom: 3px solid #000000;
@@ -214,6 +222,7 @@ header nav ul li:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
+  transition: height 0.5s;
 }
 #portfolio .section-wrapper .portofolio-grid-container .portofolio-grid .portofolio-grid-tile .portfolio-grid-hover {
   position: absolute;
@@ -329,6 +338,7 @@ footer .footer-head {
   padding: 30px;
   letter-spacing: 5px;
   font-size: 25px;
+  text-transform: uppercase;
 }
 footer .footer-wrapper {
   text-align: center;
