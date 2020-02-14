@@ -49,6 +49,21 @@ button.big-button {
   margin: auto;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: lighter;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -114,8 +129,63 @@ header nav ul li:hover {
 #product .product-right .product-feature {
   margin: 10px 0;
 }
+#product .product-right .product-feature li {
+  display: flex;
+  margin-bottom: 15px;
+}
+#product .product-right .product-feature li span:first-of-type {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #CDCDCD;
+  display: inline-block;
+  margin-right: 20px;
+}
 #product .product-right .product-big-button {
   margin: 10px 0;
+}
+
+#team .section-wrapper .team-container {
+  margin: 30px 0 0;
+}
+#team .section-wrapper .team-container .team-list {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+#team .section-wrapper .team-container .team-list .team-tile {
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 20px;
+}
+#team .section-wrapper .team-container .team-list .team-tile .team-image-wrapper {
+  margin-bottom: 20px;
+}
+#team .section-wrapper .team-container .team-list .team-tile .team-image-wrapper .team-image {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+#team .section-wrapper .team-container .team-list .team-tile .team-person {
+  margin-bottom: 20px;
+}
+#team .section-wrapper .team-container .team-list .team-tile .team-person .person-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#team .section-wrapper .team-container .team-list .team-tile .team-person .person-position {
+  font-size: 12px;
+}
+#team .section-wrapper .team-container .team-list .team-tile .person-desc {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+#team .section-wrapper .team-container .team-list .team-tile .social-contact .fa {
+  font-size: 10px;
+  border: 1px solid #565D67;
+  padding: 8px 0;
 }
 
 #experience {
@@ -244,6 +314,10 @@ header nav ul li:hover {
 #contact .section-wrapper .contact-wrapper .contact-right .phone-no li {
   margin-bottom: 5px;
 }
+#contact .section-wrapper .contact-wrapper .contact-right .social-contact .fa {
+  border: 1px solid #565D67;
+  color: #565D67;
+}
 
 footer {
   padding: 10px 0;
@@ -261,6 +335,19 @@ footer .footer-wrapper {
   width: 50%;
   margin: auto;
   padding: 20px;
+}
+footer .footer-wrapper .footer-desc {
+  margin-bottom: 50px;
+}
+footer .footer-wrapper .social-contact {
+  margin: 30px 0;
+}
+footer .footer-wrapper .social-contact .fa {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+}
+footer .footer-wrapper .social-contact .fa:before {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=home.css.map */

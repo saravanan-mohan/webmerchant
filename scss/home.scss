@@ -75,10 +75,82 @@ header {
 
         .product-feature {
             margin: 10px 0;
+
+            li {
+                display: flex;
+                margin-bottom: 15px;
+
+                span:first-of-type {
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: #CDCDCD;
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+            }
         }
 
         .product-big-button {
             margin: 10px 0;
+        }
+    }
+}
+
+#team {
+    .section-wrapper {
+        .team-container {
+            margin: 30px 0 0;
+
+            .team-list {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                margin: auto;
+    
+                .team-tile {
+                    width: 15%;
+                    text-align: center;
+                    padding: 10px;
+                    margin: 0 20px;
+    
+                    .team-image-wrapper {
+                        margin-bottom: 20px;
+    
+                        .team-image {
+                            background-size: cover;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+    
+                    .team-person {
+                        margin-bottom: 20px;
+    
+                        .person-name {
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+    
+                        .person-position {
+                            font-size: 12px;
+                        }
+                    }
+    
+                    .person-desc {
+                        margin-bottom: 20px;
+                        font-size: 12px;
+                    }
+
+                    .social-contact {
+                        .fa {
+                            font-size: 10px;
+                            border: 1px solid #565D67;
+                            padding: 8px 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -245,6 +317,13 @@ header {
                         margin-bottom: 5px;
                     }
                 }
+
+                .social-contact {
+                    .fa {
+                        border: 1px solid #565D67;
+                        color: #565D67;
+                    }
+                }
             }
         }
     }
@@ -267,5 +346,22 @@ footer {
         width: 50%;
         margin: auto;
         padding: 20px;
+
+        .footer-desc {
+            margin-bottom: 50px;
+        }
+
+        .social-contact {
+            margin: 30px 0;
+
+            .fa {
+                background-color: transparent;
+                border: 1px solid #FFFFFF;
+
+                &:before {
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
 }
