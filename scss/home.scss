@@ -293,7 +293,7 @@ header {
                         position: absolute;
                         width: 100px;
                         height: 100px;
-                        background-color: #3db0f7;
+                        background-color: #EBEBEB;
                         border-radius: 50%;
                     }
 
@@ -308,7 +308,15 @@ header {
                     }
 
                     .progress-indicator {
-                        background-color: #EBEBEB;
+                        background-color: #3db0f7;
+
+                        &:nth-child(2) {
+                            clip: rect(50px, 100px, 100px, 0px);
+                        }
+
+                        &:nth-child(3) {
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
                     }
                 }
 

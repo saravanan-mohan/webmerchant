@@ -307,7 +307,7 @@ header nav ul li:hover {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: #3db0f7;
+  background-color: #EBEBEB;
   border-radius: 50%;
 }
 #experience .round-progress ul li .progress-container .ring-mask {
@@ -320,7 +320,13 @@ header nav ul li:hover {
   align-items: center;
 }
 #experience .round-progress ul li .progress-container .progress-indicator {
-  background-color: #EBEBEB;
+  background-color: #3db0f7;
+}
+#experience .round-progress ul li .progress-container .progress-indicator:nth-child(2) {
+  clip: rect(50px, 100px, 100px, 0px);
+}
+#experience .round-progress ul li .progress-container .progress-indicator:nth-child(3) {
+  clip: rect(0px, 100px, 100px, 50px);
 }
 #experience .round-progress ul li .progress-title {
   margin-top: 20px;
