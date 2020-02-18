@@ -147,6 +147,43 @@ header nav ul li:hover {
   }
 }
 
+#topCarousel .carousel-wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+#topCarousel .carousel-wrapper .carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #CDCDCD;
+}
+#topCarousel .carousel-wrapper .carousel-item.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade 1.5s;
+}
+#topCarousel .carousel-wrapper .carousel-item.show span {
+  margin: 5px;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+#topCarousel .carousel-wrapper .carousel-item .arrow {
+  font-weight: bold;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #product {
   background-color: #FFFFFF;
   display: flex;
