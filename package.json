@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/saravanan-mohan/webmerchant#readme",
   "devDependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "sass": "^1.25.0"
   }
 }
